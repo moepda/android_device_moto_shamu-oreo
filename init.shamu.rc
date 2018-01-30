@@ -495,7 +495,7 @@ service ss_ramdump /system/bin/subsystem_ramdump
 service thermal-engine /system/bin/thermal-engine
    class main
    user root
-   group root
+   group root system diag
 
 service time_daemon /system/bin/time_daemon
    class late_start
