@@ -7,7 +7,7 @@ init_daemon_domain(thermald)
 
 allow thermald shared_log_device:chr_file rw_file_perms;
 
-allow thermald self:capability { dac_override fsetid chown };
+allow thermald self:capability { fsetid chown };
 
 # Access to /dev/msm_thermal_query
 allow thermald thermal_engine_device:chr_file rw_file_perms;

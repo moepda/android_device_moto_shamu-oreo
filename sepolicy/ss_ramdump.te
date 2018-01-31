@@ -18,5 +18,5 @@ userdebug_or_eng(`
 
   # Needed to allow UID=root to access /data/tombstones,
   # which is owned by UID=system
-  allow ss_ramdump self:capability dac_override;
+  #allow ss_ramdump self:capability dac_override;
 ')
