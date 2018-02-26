@@ -278,6 +278,9 @@ on post-fs-data
     mkdir /data/misc/dhcp 0770 dhcp dhcp
     chown dhcp dhcp /data/misc/dhcp
 
+    # Mount 32-bit face lock lib over 64-bit version
+    mount none /system/vendor/lib/libfacenet-32.so /system/lib/libfacenet.so bind
+
     # Create the directories used by CnE subsystem
     mkdir /data/connectivity 0771 system system
     chown system system /data/connectivity

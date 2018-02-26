@@ -150,6 +150,10 @@ endif
 # Qualcomm Time Services
 BOARD_USES_QC_TIME_SERVICES := true
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/lib/libfacenet.so|libprotobuf-cpp-preo.so
+
 TARGET_FS_CONFIG_GEN += device/moto/shamu/config.fs
 
 # Recovery
