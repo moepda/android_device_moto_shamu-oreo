@@ -134,6 +134,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+<!--
     <hal format="hidl">
         <name>android.hardware.nfc</name>
         <transport>hwbinder</transport>
@@ -143,6 +144,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+-->
     <hal format="hidl">
         <name>android.hardware.oemlock</name>
         <transport>hwbinder</transport>
